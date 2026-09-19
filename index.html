@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>汕尾打黑钓点助手</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 地图容器 -->
+  <div id="map"></div>
+
+  <!-- 顶部状态栏 -->
+  <div id="topbar">
+    <div class="tb-title">
+      <span class="tb-dot"></span> 汕尾打黑钓点助手
+    </div>
+    <div id="tb-loc" class="tb-loc">定位中…</div>
+  </div>
+
+  <!-- 底部操作栏 -->
+  <div id="bottombar">
+    <button id="btn-find" class="btn-main">🎣 一键找钓点</button>
+    <button id="btn-list" class="btn-sub">📋 推荐清单</button>
+    <button id="btn-mine" class="btn-sub">⭐ 我的点</button>
+  </div>
+
+  <!-- 推荐清单面板 -->
+  <div id="panel-list" class="panel">
+    <div class="panel-head">
+      <span>🎯 本次出钓推荐</span>
+      <button class="panel-close" data-close="panel-list">✕</button>
+    </div>
+    <div id="list-body" class="list-body"></div>
+  </div>
+
+  <!-- 我的点面板 -->
+  <div id="panel-mine" class="panel">
+    <div class="panel-head">
+      <span>⭐ 我的钓点</span>
+      <button class="panel-close" data-close="panel-mine">✕</button>
+    </div>
+    <div id="mine-body" class="list-body"></div>
+  </div>
+
+  <!-- 钓点详情浮层 -->
+  <div id="detail" class="detail"></div>
+
+  <script src="data/water.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
